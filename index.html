@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрационная форма</title>
+</head>
+<body>
+<form action="https://postman-echo.com/post" method="post">
+
+    <div class="name">
+        <label>
+            <input type="text"
+                   name="name"
+                   placeholder="Имя"
+                   required>
+        </label>
+    </div>
+
+    <div class="surname">
+        <label>
+            <input
+                    type="text"
+                    name="name"
+                    placeholder="Фамилия"
+                    required>
+        </label>
+    </div>
+
+    <div class="country">Страна:
+        <label>
+            <select name="country" required>
+                <option name="country" value=""></option>
+                <option name="country" value="RU">Россия</option>
+                <option name="country" value="BY">Беларусь</option>
+                <option name="country" value="UKR">Украина</option>
+                <option name="country" value="EST">Эстония</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="gender">Пол:
+        <label>
+            <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    required>Мужской
+        </label>
+        <label>
+            <input
+                    type="radio"
+                    name="gender"
+                    value="female">Женский
+        </label>
+    </div>
+    <div class="date">Дата рождения:
+        <label>
+            <input type="date" name="date">
+        </label>
+    </div>
+
+    <div class="status">Семейное положение:
+        <label>
+            <input
+                    type="radio"
+                    name="status"
+                    value="Холост/не женат">Холост/не женат
+        </label>
+        <label>
+            <input
+                    type="radio"
+                    name="status"
+                    value="В браке">В браке
+        </label>
+        <label>
+            <input
+                    type="radio"
+                    name="status"
+                    value="Разведен(а)">Разведен(a)
+        </label>
+    </div>
+
+    <div class="email">Почта
+        <label>
+            <input type="email"
+                   name="email"
+                   placeholder="suslik@gmail.com"
+                   required>
+        </label>
+    </div>
+
+    <div class="number">Номер телефона:
+        <label>
+            <select name="index">
+                <option name="index">+7</option>
+                <option name="index">+380</option>
+                <option name="index">+375</option>
+                <option name="index">+372</option>
+            </select>
+        </label>
+        <label>
+            <input name="phone" placeholder="666">
+        </label>
+    </div>
+
+    <div class="me">Обо мне
+        <label>
+            <br>
+            <textarea rows="10" cols="50">Что-нибудь о себе</textarea>
+        </label>
+    </div>
+
+    <div class="search"> Какой поисковой системой вы пользуетесь?
+        <label>
+            <input
+                    type="checkbox"
+                    name="search"
+                    value="Google">Google
+        </label>
+        <label>
+            <input
+                    type="checkbox"
+                    name="search"
+                    value="Yahoo">Yahoo
+        </label>
+        <label>
+            <input
+                    type="checkbox"
+                    name="search"
+                    value="Yandex">Yandex
+        </label>
+    </div>
+
+    <div class="password">Пароль:
+        <label>
+            <input
+                    type="password"
+                    name="password"
+                    placeholder="Введите пароль"
+                    maxlength="10"
+                    required>
+        </label>
+    </div>
+    <div class="twopassword">Повторите пароль:
+        <label>
+            <input
+                    type="password"
+                    name="twopassword"
+                    placeholder="Повторите пароль"
+                    maxlength="10"
+                    required>
+        </label>
+    </div>
+
+    <div class="terms">
+        <label>
+            <input
+                    type="checkbox"
+                    required>Согласен с <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Условиями сайта</a>
+        </label>
+    </div>
+
+    <div class="submit">
+        <br>
+        <label>
+            <input
+                type="submit"
+                value="Зарегистрироваться">
+        </label>
+    </div>
+</form>
+</body>
+</html>
